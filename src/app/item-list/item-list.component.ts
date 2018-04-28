@@ -9,6 +9,7 @@ import {ItemService} from './item-service';
 })
 export class ItemListComponent implements OnInit {
   items: Item[];
+  searchText: String;
 
   constructor(private itemService: ItemService) {
   }
