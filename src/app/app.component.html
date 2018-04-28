@@ -1,0 +1,18 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-black scrolling-navbar"
+            [containerInside]="false">
+  <logo>
+    <a class="logo navbar-brand" routerLink="/"><strong>SHOP</strong></a>
+  </logo>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a class="nav-link" routerLink="/details">About</a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
+
+<router-outlet></router-outlet>

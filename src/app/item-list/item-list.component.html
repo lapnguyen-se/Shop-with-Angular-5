@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-12">
+      <input type="text" class="form-control bg-white" name="item" placeholder="SEARCH TEXT GOES HERE"
+             [(ngModel)]="searchText">
+    </div>
+    <!--<div class="col col-md-2">-->
+      <!--<div class="btn btn-outline-primary float-right">Search</div>-->
+    <!--</div>-->
+  </div>
+</div>
+
+<app-item *ngFor="let item of items | filter : searchText" [item]="item"></app-item>
+
